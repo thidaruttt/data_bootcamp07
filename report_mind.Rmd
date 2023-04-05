@@ -1,0 +1,151 @@
+---
+title: "Homework Data Viz"
+author: "thidarut"
+date: "2023-03-15"
+output: html_document
+---
+#### This is YAML
+
+## Data Visualization with Customer Shopping Dataset - Retail Sales Data
+### Welcome to the shopping world of Istanbul! Our dataset contains shopping information from 10 different shopping malls between 2021 and 2023.
+
+[kaggle](https://www.kaggle.com/datasets/mehmettahiraslan/customer-shopping-dataset)
+
+
+
+Import library
+```{r}
+library(tidyverse)
+library(patchwork)
+library(ggplot2)
+library(lubridate)
+```
+
+Load data from csv file
+```{r}
+cus_shop_df <- read.csv("customer_shopping_data.csv", stringsAsFactors = FALSE)
+glimpse(cus_shop_df)
+```
+
+
+### Bar plot for The most visited shopping malls
+```{r}
+cus_shop_df %>%
+  count(shopping_mall) %>%
+  ggplot(aes(x=shopping_mall, y=n, fill=shopping_mall)) +
+  geom_col() +
+  theme_minimal() +
+  geom_text(aes(label = n),
+            position = position_stack(vjust = 0.5), 
+            color = "white", size=3) +
+  scale_x_discrete(guide = guide_axis(angle = 90)) +
+  labs(title = "The most visited shopping malls",
+    x = "Shopping malls",
+    y = "Visitors count")
+
+```
+
+
+
+
+
+
+
+
+
+
+### Pie plot for shopping comparison between men and women
+```{r}
+f <- cus_shop_df %>%
+  filter(gender == "Female") %>%
+  group_by(payment_method) %>%
+  summarise(price_total = sum(quantity * price)) %>%
+  ggplot(aes(x="", y=price_total, fill=payment_method)) +
+  geom_bar(stat="identity", col="white") +
+  coord_polar("y", start=0) +
+  theme_minimal() +
+  geom_text(aes(label = scales::comma(price_total)), position = position_stack(vjust = 0.5), color = "gray0", size=3) +
+  theme_minimal() +
+  labs(title = "Shopping Girl", y= "total amount(TL)") +
+  scale_fill_manual(values = c(
+    "lightblue1", "lightgoldenrod1", "#FAD4D8"
+  ))
+
+m <- cus_shop_df %>%
+  filter(gender == "Male") %>%
+  group_by(payment_method) %>%
+  summarise(price_total = sum(quantity * price)) %>%
+  ggplot(aes(x="", y=price_total, fill=payment_method)) +
+  geom_bar(stat="identity", col="white") +
+  coord_polar("y", start=0) +
+  theme_minimal() +
+  geom_text(aes(label = scales::comma(price_total)), position = position_stack(vjust = 0.5), color = "white", size=3) +
+  theme_minimal() +
+  labs(title = "Shopping Boy", y= "total amount(TL)") +
+  scale_fill_manual(values = c(
+    "royalblue1", "salmon1", "palevioletred3"
+  ))
+
+f + m
+
+```
+
+
+
+### Horizontal barplot for product sales from 2021-2023 in Mall of Istanbul
+```{r}
+
+
+cus_shop_df %>%
+  mutate(date_x = dmy(invoice_date), year = year(date_x)) %>%
+  filter(shopping_mall == "Mall of Istanbul") %>%
+  group_by(year, category) %>%
+  summarise(quantity_total = sum(quantity)) %>%
+  ggplot(aes(year, quantity_total, fill=category)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  coord_flip()  +
+  theme_bw() +
+  labs(title = "Product sales from 2021-2023 in Mall of Istanbul", y= "sale") +
+  scale_fill_brewer(type="qual", palette = 4)
+
+```
+
+
+
+
+### Dotplot for Sales per product By Shopping mall
+```{r}
+cus_shop_df %>%
+  group_by(shopping_mall, category) %>%
+  summarise(quantity_total = sum(quantity)) %>%
+  ggplot(aes(shopping_mall, quantity_total, fill=category)) +
+  geom_dotplot(binaxis='y', method="histodot") +
+  scale_x_discrete(guide = guide_axis(angle = 90)) +
+  theme_minimal() +
+  labs(title = "Sales per product By Shopping mall") +
+  scale_fill_brewer(type="qual", palette = 8)
+
+
+```
+
+
+
+
+### Point plot for Clothing Sales By year
+```{r}
+
+cus_shop_df %>%
+  mutate(date_x = dmy(invoice_date), year = year(date_x), month_year = format(date_x,'%Y-%m')) %>%
+  filter(category == "Clothing") %>%
+  group_by(year, month_year, category) %>%
+  summarise(quantity_total = sum(quantity)) %>%
+  ggplot(aes(month_year, quantity_total)) +
+  geom_point(shape=21, size=4, col = "#b3cde3", fill="#fc8d62") +
+  scale_x_discrete(guide = guide_axis(angle = 90)) +
+  theme_minimal() +
+  labs(title = "Clothing Sales By year") +
+  scale_fill_brewer(type="qual", palette = 8)
+
+
+```
+
