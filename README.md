@@ -6,6 +6,8 @@ All my data project in the bootcamp.
   - Google sheet project #2 in https://docs.google.com/spreadsheets/d/10JuIIcd7ni4hqIf_tJ3w8AXjqv4OenoypeoVDdrW-gE/edit?usp=sharing
 - SQL
 - R Programmimg
+  - Chatbot project #1 in https://datalore.jetbrains.com/notebook/EoxiMP2fwhr9ykSk3HGEHs/OJ8Sxb28HhB7iTkjcE1Rrn
+  - Pao YingChub!✌🏻Game project #2 in https://replit.com/@ThidarutNon/Pao-Ying-Chub-Game
 - Data Transformation
 - Data Visualization
 - Essential Statistics
