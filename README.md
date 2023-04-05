@@ -11,10 +11,8 @@ All my data project in the bootcamp.
 - Data Transformation
   - Web Scraping project in https://datalore.jetbrains.com/notebook/EoxiMP2fwhr9ykSk3HGEHs/9gcK9INhOkBknBgSu5XL3Y
 - Data Visualization
-- Essential Statistics
 - Essential ML
 - Python
 - Python for Data Analyst
 - Dashboard
 
-Verified Badge: 
