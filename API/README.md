@@ -2,7 +2,7 @@
 
 ## How to run this project
 1. go to https://replit.com/@ThidarutNon/first-Javascript#live_class.js
-2. on terminal type node "live_class.js" for start server
+2. on terminal type "node live_class.js" for start server
 3. you can look at the output by install Postman: https://www.postman.com/ 
   - Get data
 ![get_data](https://user-images.githubusercontent.com/89543049/230713334-ab22ea82-17c5-45cb-8f03-984eeae32375.png)
