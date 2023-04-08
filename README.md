@@ -14,7 +14,5 @@ All my data project in the bootcamp.
 - API
   - first javascript project in https://replit.com/@ThidarutNon/first-Javascript#live_class.js (Please open "API" Directory to read the manual first.)
 - Essential ML
-- Python
-- Python for Data Analyst
-- Dashboard
+
 
