@@ -3,6 +3,7 @@ library(caret)
 library(tidyverse)
 library(readxl)
 library(ggplot2)
+library(leaps)
 
 # House Price Prediction
 # 1. load data
