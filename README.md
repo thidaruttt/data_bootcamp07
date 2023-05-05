@@ -12,6 +12,7 @@ All my data project in the bootcamp.
 - Data Transformation
   - Web Scraping project in https://datalore.jetbrains.com/notebook/EoxiMP2fwhr9ykSk3HGEHs/9gcK9INhOkBknBgSu5XL3Y
 - Data Visualization
+- Dashboard
 - API
   - first javascript project in https://replit.com/@ThidarutNon/first-Javascript#live_class.js (Please open "API" Directory to read the manual first.)
 - Essential ML
