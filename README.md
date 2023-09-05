@@ -9,11 +9,14 @@ I earned a badge from DataRockie School! https://api.badgr.io/public/assertions/
 - Google sheets
   - Google sheet project #1 in https://docs.google.com/spreadsheets/d/1c3vAqTZwUj07yWVZKyuwao8LYDV5_SisvHlE3FbV0-Q/edit?usp=sharing
   - Google sheet project #2 in https://docs.google.com/spreadsheets/d/10JuIIcd7ni4hqIf_tJ3w8AXjqv4OenoypeoVDdrW-gE/edit?usp=sharing
-- SQL
+- SQL (Create Bakery Cafe Database)
 - R Programmimg
   - Chatbot project #1 in https://datalore.jetbrains.com/notebook/EoxiMP2fwhr9ykSk3HGEHs/OJ8Sxb28HhB7iTkjcE1Rrn
   - Pao YingChub!✌🏻Game project #2 in https://replit.com/@ThidarutNon/Pao-Ying-Chub-Game
-- Python
+- Python (in PDF file)
+  - Chatbot to order pizza
+  - Pao YingChob Game
+  - Create ATM Class
 - Data Transformation
   - Web Scraping project in https://datalore.jetbrains.com/notebook/EoxiMP2fwhr9ykSk3HGEHs/9gcK9INhOkBknBgSu5XL3Y
 - Data Visualization
@@ -21,6 +24,6 @@ I earned a badge from DataRockie School! https://api.badgr.io/public/assertions/
   - Certificate: https://analytics.google.com/analytics/academy/certificate/QABMDAwSSnOYgDv0Lcj5sw
 - API
   - first javascript project in https://replit.com/@ThidarutNon/first-Javascript#live_class.js (Please open "API" Directory to read the manual first.)
-- Essential ML
+- Essential ML (House Price Prediction)
 
 
