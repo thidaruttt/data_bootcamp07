@@ -1,6 +1,6 @@
 # Dashboard Project
 
-- ## PowerBI
+- ## PowerBI Data Model & Dashboard
 ![image](https://github.com/thidaruttt/data_bootcamp07/assets/89543049/cc9b7dee-98da-4e7c-be98-fd3932a8d3a6)
 ![image](https://github.com/thidaruttt/data_bootcamp07/assets/89543049/636742e5-2be7-4cbe-882d-8469c80ba205)
 
