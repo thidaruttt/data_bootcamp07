@@ -17,7 +17,7 @@ I earned a badge from DataRockie School! https://api.badgr.io/public/assertions/
 - Data Transformation
   - Web Scraping project in https://datalore.jetbrains.com/notebook/EoxiMP2fwhr9ykSk3HGEHs/9gcK9INhOkBknBgSu5XL3Y
 - Data Visualization
-- Dashboard
+- Dashboard (Power BI/ Looker Studio/ Tableau Public)
   - Certificate: https://analytics.google.com/analytics/academy/certificate/QABMDAwSSnOYgDv0Lcj5sw
 - API
   - first javascript project in https://replit.com/@ThidarutNon/first-Javascript#live_class.js (Please open "API" Directory to read the manual first.)
